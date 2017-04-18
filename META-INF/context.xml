@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/VoySearch">
+  <Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="30" maxTotal="100" maxWaitMillis="-1" name="jdbc/ReportsDB" password="xxxxxx" type="javax.sql.DataSource" url="jdbc:oracle:thin:@testorbis.library.yale.edu:1521:VGER" username="xxxxxx" validationQuery="select 1 from dual"/>
+</Context>

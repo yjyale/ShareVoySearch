@@ -1,0 +1,16 @@
+Search sample urls:
+
+1.
+https://libapp-dev.library.yale.edu:8443/VoySearch/GetBibItem?bibid=2
+
+2.
+https://libapp-dev.library.yale.edu:8443/VoySearch/GetItem?barcode=39002003201317
+
+3.
+http://libapp-dev.library.yale.edu/VoySearch/GetBibMarc?bibid=3694053
+
+4.
+http://libapp-dev.library.yale.edu/VoySearch/GetMfhdItem?itemid=2
+
+5.
+http://libapp-dev.library.yale.edu/VoySearch/GetAllMfhdItem?bibid=6834

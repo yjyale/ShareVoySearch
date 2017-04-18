@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <!-- General description of your web application -->
+    <display-name>Search Voyager Web Service API</display-name>
+    <description>
+    	Yale University Library Search Voyager Web Service API
+    </description>
+   
+  <servlet>
+    <servlet-name>InitPrecompile</servlet-name>
+    <display-name>Servlet Precompile Init</display-name>
+    <description>Initialize Voyager API and connection to database</description>
+    <servlet-class>Precompile.InitPrecompile</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>InitPrecompile</servlet-name>
+    <url-pattern>/servlet/InitPrecompile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetItem</servlet-name>
+    <servlet-class>src.GetItem</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>GetItem</servlet-name>
+    <url-pattern>/GetItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetBibItem</servlet-name>
+    <servlet-class>src.GetBibItem</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>GetBibItem</servlet-name>
+    <url-pattern>/GetBibItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetBibMarc</servlet-name>
+    <servlet-class>src.GetBibMARC</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>GetBibMarc</servlet-name>
+    <url-pattern>/GetBibMarc</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+    <servlet-name>GetMfhdItem</servlet-name>
+    <servlet-class>src.GetMfhdItem</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>GetMfhdItem</servlet-name>
+    <url-pattern>/GetMfhdItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetAllMfhdItem</servlet-name>
+    <servlet-class>src.GetAllMfhdItem</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>GetAllMfhdItem</servlet-name>
+    <url-pattern>/GetAllMfhdItem</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+      <session-timeout>30</session-timeout>    <!-- 30 minutes -->
+  </session-config>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
